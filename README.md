@@ -7,7 +7,7 @@ Ez a repository egy minimális, egyoldalas React alkalmazást (frontend) tartalm
 Az alkalmazás egy modern megjelenésű weboldal, amely HTTP-n keresztül elérhető, és a következő, egyszerű szöveges üzenetet adja vissza: **"Helló Világ!"**
 
 ### Elérhetőség
-* **Fejlesztői környezetben (Local):** http://localhost:3000
+* **Fejlesztői környezetben (Local):** http://localhost:8000
 * **Docker Konténerben:** http://localhost:8080
 
 ## 2.2. Buildelés
@@ -54,7 +54,7 @@ docker build -t hello-devops:v1 .
 
 Az alkalmazás konténerizált formája a **Render** felhőplatform ingyenes szintjén (Free Tier) került telepítésre és futtatásra. Ez a lépés demonstrálja a Continuous Delivery (CD) folyamatot. 
 * **Szolgáltató neve:** Render
-* **Publikus URL:** `https://hello-devops-mate-Q44AT0.onrender.com/` (Példa URL - Kérjük, cserélje le a saját, tényleges Render URL-jére!)
+* **Publikus URL:** `https://devops-gr3v.onrender.com`
 
 ### Deploy Lépések
 
