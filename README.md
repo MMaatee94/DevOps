@@ -49,3 +49,16 @@ A projekt tartalmaz egy `Dockerfile`-t, amely egy multi-stage buildet használ. 
 Az image létrehozása a projekt gyökerében:
 ```bash
 docker build -t hello-devops:v1 .
+
+## CD - Felhő szolgáltatás használata (Folyamatos Szállítás)
+
+Az alkalmazás konténerizált formája a **Render** felhőplatform ingyenes szintjén (Free Tier) került telepítésre és futtatásra. Ez a lépés demonstrálja a Continuous Delivery (CD) folyamatot. 
+* **Szolgáltató neve:** Render
+* **Publikus URL:** `https://hello-devops-mate-Q44AT0.onrender.com/` (Példa URL - Kérjük, cserélje le a saját, tényleges Render URL-jére!)
+
+### Deploy Lépések
+
+1.  **Repository előkészítése:** Az alkalmazás (kód, `package.json`, `Dockerfile`) fel lett töltve a GitHub repository-ba.
+2.  **Render beállítása:** A Render dashboardon új **Web Service** lett létrehozva, és a forrás (Source) a GitHub repository-ra lett állítva.
+3.  **Build parancs:** A Render a buildhez a következő parancsokat használja: `npm install` és `npm run build`.
+4.  **Folyamatos Deployment:** A Render beállítása úgy történt, hogy a `main` branch-be történő minden új commit automatikusan új buildet és deploymentet indít el.
